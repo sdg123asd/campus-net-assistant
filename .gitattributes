@@ -1,0 +1,17 @@
+# 统一换行符规则
+# 这个项目跨两类系统：Windows 端（控制台）和路由器端（OpenWrt / busybox ash）。
+# 路由器上的 POSIX sh 脚本一旦带上 CRLF，会报 "not found"（#!/bin/sh\r），
+# 所以这里显式锁死：源码走 LF，Windows 脚本走 CRLF。
+
+* text=auto eol=lf
+
+# Windows 专用脚本：检出时用 CRLF
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 二进制，不做任何转换
+*.exe  binary
+*.ico  binary
+*.png  binary
+*.zip  binary

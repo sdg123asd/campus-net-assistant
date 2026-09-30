@@ -1,0 +1,76 @@
+exe  : C:\Users\李\Downloads\校园网\校园网助手\发布\校园网助手-通用版.exe
+rc   : 0
+大小 : 24893292 bytes
+payload : C:\Users\李\AppData\Local\Temp\_MEI153082\payload
+首启配置: {"autostart": false, "backend": "auto", "campus_password_enc": "", "campus_user": "", "host": "192.168.31.1", "host_fingerprint": "", "log_pause": false, "minimize_to_tray": true, "payload_dir": "", "port": 22, "preset_version": 2, "router_password_enc": "", "sched_enabled": false, "sched_off": "08:00", "sched_on": "22:00", "user": "root"}
+
+== 校园网助手 自检 ==
+python     : 3.13.14
+解释器     : C:\Users\李\Downloads\校园网\校园网助手\发布\校园网助手-通用版.exe
+paramiko   : 5.0.0
+plink/pscp : 无 / 无
+payload    : C:\Users\李\AppData\Local\Temp\_MEI153082\payload
+配置文件   : C:\Users\李\AppData\Local\Temp\campus_exe_build_cexq9z62\probe_校园网助手-通用版\.campusnet_console.json
+
+  [OK] 时间解析 08:30 
+  [OK] 时间解析容错 8：5 
+  [OK] 非法时间 
+  [OK] 时间格式化 
+  [OK] cron 时间转换 
+  [OK] 解析 已部署 
+  [OK] 解析 开关开 
+  [OK] 解析 开启时间 
+  [OK] 解析 脚本就绪 
+  [OK] 解析 crond 
+  [OK] 解析 cron 含开关判定 
+  [OK] 解析 自动时段 ('08:30', '22:00')
+  [OK] 解析 日志两行 ['2026-09-17 20:35:24 warn 当前离线（probe=000），开始认证', '2026-09-17 20:35:26 info 认证成功，已恢复在线']
+  [OK] 未部署识别 
+  [OK] 关闭状态识别 
+  [OK] 旧版 cron 报警 
+  [OK] 无时段时不误报 
+  [OK] 时段脚本 两条 cron 
+  [OK] 时段脚本 带标记 
+  [OK] 停用时无时段行 
+  [OK] 主任务脚本 可格式化 
+  [OK] 主任务脚本 含迁移 
+  [OK] 主任务脚本 带开关判定 
+  [OK] 权限脚本 可格式化 
+  [OK] 开关脚本 两种形态 
+  [OK] DPAPI 加密非空 
+  [OK] DPAPI 往返一致 
+  [OK] DPAPI 密文不含明文 
+  [OK] DPAPI 空值安全 
+  [OK] DPAPI 坏数据不崩 
+  [OK] 单实例接口可用 
+  [OK] DPI 可读 dpi=192
+  [OK] 对比度 正文 / 卡片 17.28:1
+  [OK] 对比度 次级文字 / 卡片 7.03:1
+  [OK] 对比度 辅助文字 / 卡片 5.51:1
+  [OK] 对比度 次级文字 / 页面底 6.25:1
+  [OK] 对比度 辅助文字 / 页面底 4.91:1
+  [OK] 对比度 主按钮文字 / 主色 5.17:1
+  [OK] 对比度 强调文字 / 卡片 6.70:1
+  [OK] 对比度 日志正文 / 日志底 6.85:1
+  [OK] 对比度 辅助文字 / 日志底 5.37:1
+  [OK] 对比度 语义色 ok 4.57:1
+  [OK] 对比度 语义色 off 4.69:1
+  [OK] 对比度 语义色 err 5.75:1
+  [OK] 对比度 语义色 info 5.91:1
+  [OK] 对比度 语义色 idle 5.73:1
+  [OK] 间距随 DPI 缩放 u(8)=16
+  [OK] 图标全部可渲染 []
+  [OK] 徽章渲染 (46, 46)
+  [OK] 品牌图标渲染 
+  [OK] 图标名拼写正确 []
+  [OK] 生成多尺寸 ico 49428 bytes
+  [OK] 任务栏身份已声明 CampusNetAssistant.Console.v1
+  [OK] 预置 灌入连接信息 
+  [OK] 预置 密码已加密可解回 解不出明文
+  [OK] 预置 幂等（迁移过就不再改） 
+  [OK] 预置 不引入未知键 []
+  [OK] 上传 无SFTP时退到 base64 通道 这台路由器没有 SFTP（EOF during negotiation），已自动改用 base64 通道上传。
+  [OK] 上传 字节数不符会拦截 
+  [OK] 配置写入读回 
+
+结果：全部通过（共 60 项，失败 0 项）

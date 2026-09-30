@@ -1,0 +1,45 @@
+打包日志 3.13.14
+
+== 前置检查 ==
+解释器     : C:\Users\李\AppData\Local\Programs\Python\Python313\python.exe
+Python     : 3.13.14
+PyInstaller: 6.21.0
+依赖 paramiko : OK
+依赖 PIL      : OK
+依赖 pystray  : OK
+payload    : C:\Users\李\Downloads\校园网\校园网自动登录-一键部署\campus-auth-easy-deploy\payload
+图标       : C:\Users\李\Downloads\校园网\校园网助手\campus.ico (49428 bytes)
+
+临时工作目录: C:\Users\李\AppData\Local\Temp\campus_exe_build_cexq9z62
+
+===== 打包 校园网助手（带你自己的预置连接信息（自己用）） =====
+  $ (工作目录 C:\Users\李\AppData\Local\Temp\campus_exe_build_cexq9z62)
+  -> C:\Users\李\Downloads\校园网\校园网助手\发布\校园网助手.exe  (23.7 MB)
+  校园网助手              rc=0  解码=gbk  结果：全部通过（共 60 项，失败 0 项）
+                     payload → C:\Users\李\AppData\Local\Temp\_MEI333682\payload
+                     首启配置：campus_user=已填充  路由器密码=有
+
+===== 打包 校园网助手-通用版（账号密码已清空（发给别人）） =====
+  已清空 PRESET 字段: router_password, campus_user, campus_password
+  进包的 PRESET 块：
+    PRESET = {
+        # 本机 WLAN 的默认网关就是这个地址（本机 192.168.31.137 / DNS 也是它）→
+        # 它才是这台小米路由器。之前填过 172.17.113.25，不在本网段，本机根本到不了。
+        'host': '192.168.31.1',
+        'port': 22,
+        'user': 'root',
+        'router_password': '',
+        'campus_user': '',   # 校园网账号（学号）
+        'campus_password': '',
+    }
+  $ (工作目录 C:\Users\李\AppData\Local\Temp\campus_exe_build_cexq9z62)
+  -> C:\Users\李\Downloads\校园网\校园网助手\发布\校园网助手-通用版.exe  (23.7 MB)
+  校园网助手-通用版          rc=0  解码=gbk  结果：全部通过（共 60 项，失败 0 项）
+                     payload → C:\Users\李\AppData\Local\Temp\_MEI153082\payload
+                     首启配置：campus_user=空  路由器密码=无
+
+===== 汇总 =====
+校园网助手                   23.7 MB  自检通过      payload=C:\Users\李\AppData\Local\Temp\_MEI333682\payload
+校园网助手-通用版               23.7 MB  自检通过      payload=C:\Users\李\AppData\Local\Temp\_MEI153082\payload
+
+输出目录: C:\Users\李\Downloads\校园网\校园网助手\发布
